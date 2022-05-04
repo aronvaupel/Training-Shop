@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Test = () => {
-  //fetch something from shopify
+  const [data, setData] = useState();
+
+  // getDataFunc = fetch something from shopifyAPI
 
   return (
     <>
-      <button className="bg-green-500">test</button>
-      <pre>{result}</pre>
+      <button className="bg-green-500" onClick={getData}>
+        test
+      </button>
+      <pre>{data}</pre>
     </>
   );
 };
