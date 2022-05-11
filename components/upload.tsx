@@ -13,10 +13,13 @@ const Upload = () => {
     data.append("file", image);
     data.append("upload_preset", "training-shop-preset");
     data.append("cloud_name", "dwy0h16kc");
-    fetch("  https://api.cloudinary.com/v1_1/dwy0h16kc/image/upload", {
-      method: "post",
-      body: data,
-    })
+    fetch(
+      "  https://api.cloudinary.com/v1_1/dwy0h16kc/resources/image/upload",
+      {
+        method: "post",
+        body: data,
+      }
+    )
       .then((resp) => resp.json())
       .then((data) => {
         console.log(data.url);
