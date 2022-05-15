@@ -25,6 +25,7 @@ export default async function images(
     // const { publicId } = req.query;
     const  publicId  = req.query.del ;
     console.log("deleteReq: ", publicId)
+    
     cloudinary.v2.config({
       cloud_name: 't0ny86img',
       api_key:'313793264519598',
